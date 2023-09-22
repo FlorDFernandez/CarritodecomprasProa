@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos a Proa donde vas a encontrar todo para hacer de un  hogar, tu destino ideal de cada dia, encontra todo lo que queres para tu baño, cocina, todo tu hogar y crea nuevos estilos.">
+    <title>Proa. Deco & Bazar</title>
+    <!--FAVICOM-->
+    <link rel="shortcut icon" href="./producros.img/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>PROA Bazar & Deco</title>
+    <link rel="stylesheet" href="./Estilo.css/estilo.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./producros.img/Logo.jpg" alt=" logo con la palabra Proa y hojas naturales a los lados en forma de semi circulo.">
+            <div>
+                <img onclick="mostrarCarrito(this)" class="carrito" src="./producros.img/carrrito.png" alt="Logo del Carrito de compras">
+                <p class="contar-productos">0</p>
+            </div>
+            <div class="carrito-flotante" id="productos-id">
+                <p class="cerrar-btn" onclick="cerrarBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="productos-carrito">
+                </div>
+                <h2>Total: $<strong class="precio-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="nombre-productos">
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/set cocina libre.jpg" alt=" Set de 18 platos de  ceramica con bordes ondulados sin forma geometrica definida">
+                    <p><span>15000</span>$</p>
+                </div>
+                <p class="nombre">Ceramica Libre set de baño</p>
+                <a href="" data-id="1" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/taza labrada1.png" alt=" Taza de vidrio labrada 500ml">
+                    <p><span>3000</span>$</p>
+                </div>
+                <p class="nombre"> Taza Labradas </p>
+                <a href="" class="btn-comprar" data-id="2">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/Set Victoria..png" alt=" juego completo con 48 piezas de platos, 12 por modelo, en ceramica con bordes labrados estilo romantico">
+                    <p><span>50000</span>$</p>
+                </div>
+                <p class="nombre">  Set Victoria</p>
+                <a href="" data-id="3" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/Black Flor.jpg" alt=" Florero de ceramica, con las forma de cuello, claviculas y parte inferior de un rosotro femenino">
+                    <p><span>4000</span>$</p>
+                </div>
+                <p class="nombre"> Florero FemArt</p>
+                <a href="" data-id="4" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/organizador tejido.jpg" alt="Canasto con forma de cubo  con estructura metalica y recubierto con un entretejido simil paja, de aspecto campestre">
+                    <p><span>3700</span>$</p>
+                </div>
+                <p class="nombre">  Organizador Campestre</p>
+                <a href="" data-id="5" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/Manta nordica.jpg" alt=" Manta para sillon con detalles textiles en orma de rombos y pompones">
+                    <p><span>8000</span>$</p>
+                </div>
+                <p class="nombre">Manta Nordica</p>
+                <a href="" data-id="6" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/Set de cocina Blue.jpg" alt=" Platos, cuencos, y wools de ceramica en colores frios con detalle cercano a los bordes">
+                    <p><span>35000</span>$</p>
+                </div>
+                <p class="nombre"> Set Blue</p>
+                <a href="" data-id="7" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/Velador de techo.jpg" alt=" Velador para colocar en la pared por ejemplo a los laterales de la cama">
+                    <p><span>15000</span>$</p>
+                </div>
+                <p class="nombre">  Velador de pared x 2</p>
+                <a href="" data-id="8" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/Almohadones minimal.jpg" alt=" Almohadas con detalles de 
+                    lineas verticales en su textura">
+                    <p><span>7000</span>$</p>
+                </div>
+                <p class="nombre"> Almohadones minimal x3</p>
+                <a href="" data-id="9" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/alfombra campestre.jpg" alt=" Alfombra rustica hecha con simil soguines, rectangular">
+                    <p><span>4000</span>$</p>
+                </div>
+                <p class="nombre"> Alfombra Rustica rectangular</p>
+                <a href="" data-id="10" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="comprar">
+                <div>
+                    <img src="./producros.img/lampara submarina.jpg" alt=" Lampara tripo de con un cono metalico 
+                    y enrrejado amplio por donde sale la luz">
+                    <p><span>40000</span>$</p>
+                </div>
+                <p class="nombre"> Lampara Sub Marina</p>
+                <a href="" data-id="11" class="btn-comprar">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div> <p> Entrega final JS  Florencia Fernandez </p></div>
+    </footer>
+
+    <script>
+        function mostrarCarrito(x) {
+            document.getElementById("productos-id").style.display = "block";
+        }
+        function cerrarBtn() {
+            document.getElementById("productos-id").style.display = "none";
+        }
+
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
